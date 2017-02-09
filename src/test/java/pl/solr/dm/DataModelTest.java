@@ -28,6 +28,7 @@ import pl.solr.dm.producers.JsonDataModelProducer;
 import pl.solr.dm.producers.SolrDataModelProducer;
 import pl.solr.dm.types.ArrayDataType;
 import pl.solr.dm.types.DateDataType;
+import pl.solr.dm.types.IPV4DataType;
 import pl.solr.dm.types.IdentifierDataType;
 import pl.solr.dm.types.ObjectDataType;
 
@@ -64,6 +65,9 @@ public class DataModelTest {
 		for (int i = 0; i < 3; i++) {
 			System.out.println(new SolrDataModelProducer().convert(model.getValue()));
 		}
+		
+		DataType<?> ip = model.getValue().getNewValue().get("ip");
+		assertTypeAndNotNull(ip, IPV4DataType.class);
 	}
 	
 
