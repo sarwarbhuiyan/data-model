@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>pl.solr.datamodel</groupId>
 	<artifactId>datamodel</artifactId>
-	<version>0.0.8-SNAPSHOT</version>
+	<version>0.0.9-SNAPSHOT</version>
 	<description>Automagically generated test data</description>
 	<url>http://solr.pl/</url>
 	
@@ -63,12 +63,18 @@
 			<name>Marek Rogoziński</name>
 			<email>m.rogozinski@solr.pl</email>
 		</developer>
+		<developer>
+			<id>sarwarbhuiyan</id>
+			<name>Sarwar Bhuiyan</name>
+			<email>sarwar.bhuiyan@gmail.com</email>
+		</developer>
+		
 	</developers>
 	  
 	<scm>
-		<url>https://github.com/solrpl/data-model</url>
-		<connection>scm:git:git@github.com:solrpl/data-model.git</connection>
-		<developerConnection>scm:git:git@github.com:solrpl/data-model.git</developerConnection>
+		<url>https://github.com/sarwarbhuiyan/data-model</url>
+		<connection>scm:git:git@github.com:sarwarbhuiyan/data-model.git</connection>
+		<developerConnection>scm:git:git@github.com:sarwarbhuiyan/data-model.git</developerConnection>
 	</scm>
 
 	<build>
@@ -93,19 +99,6 @@
 				<version>2.8.1</version>
 			</plugin>
 	   	
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-gpg-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>sign-artifacts</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>sign</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 	</build>
 	<reporting>
